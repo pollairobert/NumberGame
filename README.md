@@ -7,3 +7,4 @@ mvn package
 
 java -jar target/numbergame-0.0.1.jar
 
+http://localhost:8080/
