@@ -189,7 +189,6 @@ const CustomInput = (props) => {
             </>
           )
         )}
-        {/* {tippResult === 'gameover' && ( */}
         <div style={{ marginTop: '23px' }}>
           {gamer && (
             <Button
@@ -217,7 +216,6 @@ const CustomInput = (props) => {
             }}
           />
         </div>
-        {/* )} */}
       </div>
     </Card>
   );

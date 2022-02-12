@@ -14,12 +14,12 @@ import org.springframework.stereotype.Repository;
 public interface GameStatsRepo extends JpaRepository<GameStats, Long> {
 
   Optional<GameStats> findById(Long statId);
-  // GameStats save(GameStats gameStat);
-
+  
   void deleteById(Long statId);
 
   List<GameStats> findAllByOrderByGameTimeAsc();
 
   @Query(value = "SELECT * FROM game_stats WHERE gamer_id= :id ORDER BY game_time ASC", nativeQuery = true)
   List<GameStats> findAllOwnStats(@Param("id") Long id);
+
 }

@@ -25,8 +25,6 @@ public class Gamer {
 	@Column(name = "GAMER_ID")
 	private Long id;
 
-  //@JsonIgnore
-  //@JsonBackReference
   @JsonManagedReference
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "gamer")
 	private List<GameStats> gameStats;
@@ -45,7 +43,6 @@ public class Gamer {
   public Gamer(String name) {
     this.name = name;
   }
-
 
   public Long getId() {
     return this.id;

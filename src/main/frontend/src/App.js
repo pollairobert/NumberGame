@@ -4,7 +4,6 @@ import CustomInput from './Component/CustomInput';
 import CustomTable from './Component/CustomTable';
 import { useState } from 'react';
 import ApiService from './Services/api.service';
-import { Button } from '../node_modules/primereact/button';
 
 const App = () => {
   const [gamer, setGamer] = useState(null);

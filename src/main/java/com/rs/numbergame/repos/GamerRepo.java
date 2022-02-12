@@ -11,4 +11,5 @@ import org.springframework.stereotype.Repository;
 public interface GamerRepo extends JpaRepository<Gamer, Long> {
 
   Optional<Gamer> findByName(String gamerName);
+
 }

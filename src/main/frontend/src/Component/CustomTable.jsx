@@ -5,7 +5,7 @@ import { DataTable } from '../../node_modules/primereact/datatable';
 import { Column } from '../../node_modules/primereact/column';
 
 const CustomTable = (props) => {
-  const { setDisplay, statType, gameStats, setGameStats/* , gamer */} = props;
+  const { setDisplay, statType, gameStats, setGameStats} = props;
 
   const goBack = () => {
     setDisplay('game');

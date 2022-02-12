@@ -21,7 +21,6 @@ public class GameStats {
 	@Column(name = "GAME_STAT_ID")
 	private Long id;
 
-  //@JsonManagedReference
   @JsonBackReference
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "GAMER_ID")
