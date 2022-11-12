@@ -4,6 +4,12 @@ import { Button } from '../../node_modules/primereact/button';
 import classNames from 'classnames';
 import { Card } from '../../node_modules/primereact/card';
 
+/**
+ * Custom input component to game
+ * @param props
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const CustomInput = (props) => {
   const {
     taskType,
@@ -192,6 +198,7 @@ const CustomInput = (props) => {
         <div style={{ marginTop: '23px' }}>
           {gamer && (
             <Button
+              id="stat"
               label="Statisztikád"
               onClick={(e) => showStat(gamer.id, 'own')}
               style={{
