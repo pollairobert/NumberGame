@@ -2,6 +2,9 @@ package com.rs.numbergame.dto;
 
 import java.util.List;
 
+/**
+ * Model to frontend
+ */
 public class GamerDto {
   
   private Long id;
