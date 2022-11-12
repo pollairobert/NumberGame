@@ -3,6 +3,10 @@ import { SERVER_URL } from '../Services/serverUrl';
 import { emptyGamer } from "../Services/emptyGamer"
 
 const API_URL = SERVER_URL + '/api/game/';
+
+/**
+ * Api calls
+ */
 class ApiService {
   regOrLog(gamerName) {
     const endpoint = 'regorlog';
