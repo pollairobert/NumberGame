@@ -4,6 +4,12 @@ import { Button } from '../../node_modules/primereact/button';
 import { DataTable } from '../../node_modules/primereact/datatable';
 import { Column } from '../../node_modules/primereact/column';
 
+/**
+ * Table of game statistic
+ * @param props
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const CustomTable = (props) => {
   const { setDisplay, statType, gameStats, setGameStats} = props;
 

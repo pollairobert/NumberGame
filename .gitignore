@@ -1,3 +1,5 @@
 .idea
 *.iml
 target
+# dependencies
+/src/main/frontend/node_modules
